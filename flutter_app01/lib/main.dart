@@ -9,17 +9,14 @@ class MyApp extends StatelessWidget {
       title: 'Text Widget',
       home: Scaffold(
         body: Center(
-            child: Text(
-          'Hello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,WidgetHello,Widget',
-          textAlign: TextAlign.center,
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-              fontSize: 25.0,
-              color: Color.fromARGB(255, 255, 125, 125),
-              decoration: TextDecoration.underline,
-              decorationStyle: TextDecorationStyle.solid),
-        )),
+          child: Container(
+            child: Text('Hello,JSpang', style: TextStyle(fontSize: 40)),
+            alignment: Alignment.center,
+            width: 500.0,
+            height: 400.0,
+            color: Colors.lightBlue,
+          ),
+        ),
       ),
     );
   }
