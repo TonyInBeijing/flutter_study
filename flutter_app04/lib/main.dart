@@ -18,6 +18,21 @@ void main() {
   ));
 }
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: '导航数据传递和接收',
+      home: new ProductList(
+        products: List.generate(
+          20,
+          (i) => Product('这是商品$i', '这是商品详情，编号为$i'),
+        ),
+      ),
+    );
+  }
+}
+
 class ProductList extends StatelessWidget {
   final List<Product> products;
   ProductList({Key key, @required this.products}) : super(key: key);
